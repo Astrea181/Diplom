@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>LIDO Номер Люкс видовой</title>
+        
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+ 		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script defer src="js/jquery-3.7.0.min.js"></script>
+		<script defer src="js/bootstrap.min.js"></script>
+        <script defer src="js/datepicker.js"></script>
+		<script defer src="js/gallery.js"></script>
+		<script defer src="js/main.js"></script>
+    </head>
+    
+	<body>
+		<header>
+			<div class="top">
+				<a class="logo" href="index.html"></a>
+				<nav class="topmenu">
+					<a class="home" href="index.html">Об отеле</a>
+					<a class="rooms" href="rooms.html">Номера</a>
+					<a class="services" href="services.html">Услуги</a>
+					<a class="order" href="booking.html">Бронирование</a>
+					<a class="contacts" href="contacts.html">Контакты</a>
+				</nav>
+				<div class="gamb"><span></span></div>
+				<nav class="menu_accord">
+					<ul>
+						<li><a class="home" href="index.html">Об отеле</a></li>
+						<li><a class="rooms" href="rooms.html">Номера</a></li>
+						<li><a class="services" href="services.html">Услуги</a></li>
+						<li><a class="order" href="booking.html">Бронирование</a></li>
+						<li><a class="contacts" href="contacts.html">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+				
+			<div class="middle">
+				<div class="mid_wrap">
+					<div>Проект</div>
+					<div><span>"Отель LIDO"</span></div>
+				</div>
+			</div>
+			<div class="booking"></div>
+		</header>
+		
+		<main class="room idroom" data-roomid="113">
+            <section>
+                <div class="pics">
+                    <div class="mainimagedesk">
+						<img src="images/rooms/lux_v_540.jpg" alt="Lux">
+                    </div>
+                    
+                    <div class="gallery">
+                        <div class="gal_btn left disabled">&#11164;</div>
+                        
+                        <div class="gal_window">
+                            <div class="gal_rail">
+ 								<img src="images/rooms/lux_v_150.jpg" alt="Lux" data-image="images/rooms/lux_v_540.jpg">
+                                <img src="images/rooms/wc1_150.jpg" alt="Lux" data-image="images/rooms/wc1_540.jpg">
+                                <img src="images/rooms/wc2_150.jpg" alt="Lux" data-image="images/rooms/wc2_540.jpg.jpg">
+                                <img src="images/rooms/hause2_150.jpg" alt="Lux" data-image="images/rooms/hause2_540.jpg">
+                                <img src="images/rooms/hause1_150.jpg" alt="Lux" data-image="images/rooms/hause1_540.jpg">
+                                <img src="images/rooms/pool_150.jpg" alt="Lux" data-image="images/rooms/pool_540.jpg">
+							</div>
+                        </div>
+                        
+                        <div class="gal_btn right">&#11166;</div>
+                    </div>
+                </div>
+                
+                <div class="buy">
+                    <h1 class="roomname">Люкс</h1>
+                    <p><b>Включено в Ваше размещение:</b><br> -24-часовой рум-сервис интерактивное<br> -IP-телевидение (плазменная панель диагональю 52")<br> -бесплатный доступ к Wi-Fi.</p>
+                    <div class="buy_wrap">
+						<p>Стоимость размещения<br>в сутки:</p>
+						<p class="price">6000</p>
+					</div>
+					
+					 <form name="buyform" id="buyform">
+						<div class="d1">
+							<label for="date" class="form-label">Дата заезда:</label>
+							<div class="input-group mb-3">
+								<input type="text" class="form-control" id="date" name="date" readonly>
+								<button class="btn btn-outline-secondary icon datepicker" id="datepicker" type="button">&#xe909;</button>
+							</div>
+						</div>
+						<div class="d2">
+							<label for="night" class="form-label">Количество ночей:</label>
+							<div class="input-group mb-3">
+								<input type="number" class="form-control" id="night" name="night" min="1" max="14" value="1">
+							</div>
+						</div>
+						<a class="buybutton" href="booking.html">Бронировать</a>
+					</form>
+                </div>
+                
+                <div class="info">
+					<h5>Описание номера:</h5>
+                    <p> -площадь номера — 60 м².<br> -максимальное размещение - 2 человека.<br> -кровать king size<br> -кондиционер<br> -шкаф, письменный стол, стул, кресло, журнальный столик<br> -мини-холодильник, чайник, чайный набор<br> -душевая кабина<br> -халаты, одноразовые тапочки<br> -бритвенный и зубной наборы, шапочки для душа, средства гигиены<br> -все номера для некурящих</p>
+                </div>
+            </section>
+        </main>
+		
+		
+		<footer>
+			<div class="container">
+				<div class="futer_wrap">
+					<div class="bottom1"></div>
+					<nav class="bottom2">
+						<a href="index.html">Главная</a>
+						<a href="rooms.html">Номера</a>
+						<a href="services.html">Услуги</a>
+						<a href="contacts.html">Контакты</a>
+					</nav>
+					<ul class="bottom3">
+						<li>Италия, г.Бибионе, ул.Национальная, д.9</li>
+						<li>+7-000-111-11-11</li>
+						<li>+7-000-222-22-22</li>
+						<li>hello.site@gmail.com</li>
+					</ul>
+				</div>
+				<p class="copy">&copy; Hotel LIDO, 2023. All rights reserved</p>
+			</div>
+		</footer>
+	</body>
+</html>

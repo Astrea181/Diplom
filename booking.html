@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Отель LIDO Бронирование</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		
+		<script defer src="js/jquery-3.7.0.min.js"></script>
+		<script defer src="js/bootstrap.min.js"></script>
+        <script defer src="js/datepicker.js"></script>
+		<script defer src="js/main.js"></script>
+	</head>
+	
+	<body>
+		<header>
+			<div class="top">
+				<a class="logo" href="index.html"></a>
+				<nav class="topmenu">
+					<a class="home" href="index.html">Об отеле</a>
+					<a class="rooms" href="rooms.html">Номера</a>
+					<a class="services" href="services.html">Услуги</a>
+					<a class="order current" href="booking.html">Бронирование</a>
+					<a class="contacts" href="contacts.html">Контакты</a>
+				</nav>
+				<div class="gamb"><span></span></div>
+				<nav class="menu_accord">
+					<ul>
+						<li><a class="home" href="index.html">Об отеле</a></li>
+						<li><a class="rooms" href="rooms.html">Номера</a></li>
+						<li><a class="services" href="services.html">Услуги</a></li>
+						<li><a class="order current" href="booking.html">Бронирование</a></li>
+						<li><a class="contacts" href="contacts.html">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+				
+			<div class="middle">
+				<div class="mid_wrap">
+					<div>Проект</div>
+					<div><span>"Отель LIDO"</span></div>
+				</div>
+				
+			</div>
+			<div class="booking"></div>
+		</header>
+
+
+		<main class="order">
+            <section>
+                <h1>Детали бронирования</h1>
+				<table class="table table-striped">
+                    <thead>
+                        <tr>
+                           
+                            <th scope="col" class="name">Номер</th>
+                            <th scope="col" class="qty">Кол-во</th>
+                            <th scope="col" class="price">Цена &#8381;</th>
+							<th scope="col" class="date">Дата заезда</th>
+							<th scope="col" class="night">Ночи</th>
+                            <th scope="col" class="sum">Сумма &#8381;</th>
+                            <th scope="col" class="delete"></th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                    </tbody>
+                    
+                    <tfoot>
+                        <tr>
+                            <th scope="col" class="allsum" colspan="7">
+                                Итого:
+                                <span></span>
+                            </th>
+                        </tr>
+                    </tfoot>
+                </table>
+				<a href="rooms.html">Добавить Номер</a>
+			</section>
+            
+            <section>
+				<h2>Ваши контактные данные:</h2>
+                <form name="orderform">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Ваше имя</label>
+                        <input type="text" class="form-control" id="name" name="Имя" required placeholder="Анжелла">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mail" class="form-label">Ваша почта</label>
+                        <input type="text" class="form-control" id="mail" name="E-mail" placeholder="myname@mail.ru" required >
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Ваш телефон</label>
+                        <input type="tel" class="form-control" id="phone" name="Телефон" minlength="10" maxlength="15" placeholder="1112223344">
+                    </div>
+                    <div class="mb-3">
+                        <label for="comm" class="form-label">Комментарий</label>
+                        <textarea class="form-control" id="comm" name="comm" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="agree" name="agree" required>
+                        <label class="form-check-label" for="agree">Согласен на обработку моих персональных данных</label>
+                    </div>
+                    <div class="mb-3">
+                        <button type="button" class="btn btn-primary submit">Забронировать</button>
+                    </div>
+                </form>
+            </section>
+            
+            <section class="empty">
+                <h1>Бронь отсутствует</h1>
+              	<a href="rooms.html">Добавить Номер</a>
+            </section>
+        </main>
+
+		<footer>
+			<div class="container">
+				<div class="futer_wrap">
+					<div class="bottom1"></div>
+					<nav class="bottom2">
+						<a href="index.html">Главная</a>
+						<a href="rooms.html">Номера</a>
+						<a href="services.html">Услуги</a>
+						<a href="contacts.html">Контакты</a>
+					</nav>
+					<ul class="bottom3">
+						<li>Италия, г.Бибионе, ул.Национальная, д.9</li>
+						<li>+7-000-111-11-11</li>
+						<li>+7-000-222-22-22</li>
+						<li>hello.site@gmail.com</li>
+					</ul>
+				</div>
+				<p class="copy">&copy; Hotel LIDO, 2023. All rights reserved</p>
+			</div>
+		</footer>
+	</body>
+</html>
